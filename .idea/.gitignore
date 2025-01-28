@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignorar os arquivos das pastas 'images' e 'upscale-images'
+images/*
+upscale-images/*
+# Manter as pastas (usando arquivos .gitkeep)
+!images/.gitkeep
+!upscale-images/.gitkeep
