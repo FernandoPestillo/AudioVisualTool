@@ -1,0 +1,4 @@
+images/*
+upscale-images/*
+!images/.gitkeep
+!upscale-images/.gitkeep
