@@ -20,7 +20,7 @@ def obter_resolucao(opcao):
 
 
 def upscale_imagem(caminho_entrada, caminho_saida, resolucao):
-    """Realiza o upscale da imagem para a resolução especificada mantendo a proporção."""
+    """Realiza o upscaled-videos da imagem para a resolução especificada mantendo a proporção."""
     try:
         with Image.open(caminho_entrada) as img:
             largura_original, altura_original = img.size
@@ -48,7 +48,7 @@ def upscale_imagem(caminho_entrada, caminho_saida, resolucao):
 
 # Diretórios de entrada e saída
 pasta_entrada = "./images"
-pasta_saida = "./upscale-images"
+pasta_saida = "./upscaled-images"
 
 # Certifica-se de que os diretórios de entrada e saída existem
 os.makedirs(pasta_entrada, exist_ok=True)
@@ -64,7 +64,7 @@ else:
         print(f"{i}. {arquivo}")
 
     # Pergunta ao usuário qual imagem deseja processar
-    escolha = int(input("Digite o número da imagem que deseja fazer upscale: "))
+    escolha = int(input("Digite o número da imagem que deseja fazer upscaled-videos: "))
     if 1 <= escolha <= len(arquivos):
         arquivo_escolhido = arquivos[escolha - 1]
         caminho_arquivo = os.path.join(pasta_entrada, arquivo_escolhido)

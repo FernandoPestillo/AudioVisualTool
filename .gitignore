@@ -1,4 +1,12 @@
 images/*
-upscale-images/*
+upscaled-images/*
 !images/.gitkeep
-!upscale-images/.gitkeep
+!upscaled-images/.gitkeep
+
+musics/*
+!musics/.gitkeep
+
+videos/*
+upscaled-videos/*
+!videos/.gitkeep
+!upscaled-videos/.gitkeep
